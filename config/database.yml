@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: new_universal_design_janken_production
-  username: new_universal_design_janken
-  password: <%= ENV['NEW_UNIVERSAL_DESIGN_JANKEN_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  database: db/production.postgresql
+  url: <%= ENV['DATABASE_URL'] %>
