@@ -1,4 +1,6 @@
 class RandomJankenController < ApplicationController
+  layout "random_janken"
+
   def rock
   end
 
@@ -9,8 +11,6 @@ class RandomJankenController < ApplicationController
   end
 
   def random
-    random_hands = ["rock", "scissors", "paper"]
-    @random_hand = random_hands[rand(3)]
   end
 end
 

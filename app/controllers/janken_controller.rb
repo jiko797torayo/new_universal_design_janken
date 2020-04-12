@@ -1,4 +1,6 @@
 class JankenController < ApplicationController
+  layout "janken"
+
   def rock
   end
 
