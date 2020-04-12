@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
   root to: "janken#rock"
-  resources :janken, only: [:all] do
-    collection do
-      get :rock
-      get :scissors
-      get :paper
-    end
+  namespace :janken do
+    get :rock
+    get :scissors
+    get :paper
   end
 
   resources :random_janken, only: [:index]
