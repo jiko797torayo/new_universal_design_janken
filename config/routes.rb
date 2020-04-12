@@ -8,10 +8,5 @@ Rails.application.routes.draw do
     end
   end
 
-  namespace :random_janken do
-    get :rock
-    get :scissors
-    get :paper
-    get :random
-  end
+  resources :random_janken, only: [:index]
 end
