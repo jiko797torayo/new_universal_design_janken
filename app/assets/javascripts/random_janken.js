@@ -2,11 +2,12 @@
 //= require activestorage
 //= require turbolinks
 //= require jquery
+//= require roulette
 
 $(function(){
   document.addEventListener("keydown", function(e) {
     if (e.code === "Space") {
-      this.querySelector("a").click();
+      $('div.roulette').roulette('start');
     }
   });
 });
