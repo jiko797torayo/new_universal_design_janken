@@ -207,9 +207,12 @@ $(function(){
     $('.roulette').roulette(option);
 
     // START!
-    $('.start').click(function(){
+    $('.roulette').click(function(){
         $('div.roulette').roulette('start');
     });
+    // $('.start').click(function(){
+    //     $('div.roulette').roulette('start');
+    // });
 
     // STOP!
     $('.stop').click(function(){
