@@ -7,4 +7,11 @@ Rails.application.routes.draw do
       get :paper
     end
   end
+
+  namespace :random_janken do
+    get :rock
+    get :scissors
+    get :paper
+    get :random
+  end
 end
